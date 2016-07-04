@@ -1,0 +1,34 @@
+@using System.Threading.Tasks
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gyula Krizsma</title>
+    <link rel="icon" href="~/img/favicon.ico">
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    @RenderSection("meta", required: false)
+
+<environment names="Development">            
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic" rel="stylesheet" type="text/css">    
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.css"/>
+    <link rel="stylesheet" href="~/lib/bootstrap-social/bootstrap-social.css"/>
+    <link rel="stylesheet" href="~/lib/owl-carousel/owl-carousel/owl.carousel.css" />
+    <link rel="stylesheet" href="~/lib/owl-carousel/owl-carousel/owl.transitions.css" />
+    <link rel="stylesheet" href="~/lib/owl-carousel/owl-carousel/owl.theme.css" />
+    <link rel="stylesheet" href="~/lib/wow/css/libs/animate.css" />
+    <link rel="stylesheet" href="~/css/home.css" />
+</environment>
+
+<environment names="Production">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="~/lib/production/css/home.min.css" />
+</environment>
+</head>
+<body>
+    @RenderBody()
+    @RenderSection("scripts", required: false)
+</body>
+</html>

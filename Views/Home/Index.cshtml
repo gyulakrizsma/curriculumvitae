@@ -1,0 +1,42 @@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section meta {
+    <meta name="description" content="I am Gyula Krizsma and this is my Resume Website. I am a passionate Software Engineer who loves to create fast and beautiful applications" />
+    <meta name="keywords" content="Gyula Krizsma, Resume, CV, Software Engineer" />
+}
+
+<cache expires-after="@TimeSpan.FromDays(2)">
+
+    @Html.Partial("_Profile")
+
+    @Html.Partial("_Experiences")
+
+    @Html.Partial("_Skills")
+
+    @Html.Partial("_References")
+
+    @Html.Partial("_Interests")
+
+    @Html.Partial("_Contacts")
+
+</cache>
+
+@section scripts{
+
+<environment names="Development">
+    <script type="text/javascript" src="~/lib/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="~/lib/smoothscroll/smoothscroll.js"></script>
+    <script type="text/javascript" src="~/lib/jquery.stellar/jquery.stellar.js"></script>
+    <script type="text/javascript" src="~/lib/owl-carousel/owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="~/lib/wow/dist/wow.js"></script>
+    <script type="text/javascript" src="~/lib/jquery.scrollto/jquery.scrollto.js"></script>
+    <script type="text/javascript" src="~/client/home/home.js"></script>
+</environment>
+
+<environment names="Production">
+    <script type="text/javascript" src="~/lib/production/js/home.min.js"></script>
+</environment>
+    
+}
