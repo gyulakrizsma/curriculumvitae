@@ -61,7 +61,7 @@ gulp.task('min:css', function() {
     gulp.src(
         [   paths.webroot + 'lib/bootstrap/dist/css/bootstrap.css',
             paths.webroot + 'lib/owl-carousel/**/*.css',
-            paths.webroot + 'lib/wow/css/animate.css',
+            paths.webroot + 'lib/wow/css/libs/animate.css',
             paths.webroot + 'lib/bootstrap-social/bootstrap-social.css',
             paths.webroot + 'lib/font-awesome/css/font-awesome.css',
             paths.webroot + 'css/home.css'])
