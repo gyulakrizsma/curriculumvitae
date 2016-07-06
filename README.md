@@ -1,39 +1,29 @@
-# Welcome to ASP.NET Core
+# Curriculum Vitae
 
-We've made some big updates in this release, so it’s **important** that you spend a few minutes to learn what’s new.
+This source code represents my **Resume** website.
 
-You've created a new ASP.NET Core project. [Learn what's new](https://go.microsoft.com/fwlink/?LinkId=518016)
+During the implementation I used several technologies, which may help you as well, using those in a real world application.
 
-## This application consists of:
+## Technologies:
 
-*   Sample pages using ASP.NET Core MVC
-*   [Bower](https://go.microsoft.com/fwlink/?LinkId=518004) for managing client-side libraries
-*   Theming using [Bootstrap](https://go.microsoft.com/fwlink/?LinkID=398939)
+*   ASP.NET Core 1.0.0 RTM.
+*   Docker
+*   Gulp tasks
+*   Bower
+*   NPM package manager
 
-## How to
+## To make it run
 
-*   [Add a Controller and View](https://go.microsoft.com/fwlink/?LinkID=398600)
-*   [Add an appsetting in config and access it in app.](https://go.microsoft.com/fwlink/?LinkID=699562)
-*   [Manage User Secrets using Secret Manager.](https://go.microsoft.com/fwlink/?LinkId=699315)
-*   [Use logging to log a message.](https://go.microsoft.com/fwlink/?LinkId=699316)
-*   [Add packages using NuGet.](https://go.microsoft.com/fwlink/?LinkId=699317)
-*   [Add client packages using Bower.](https://go.microsoft.com/fwlink/?LinkId=699318)
-*   [Target development, staging or production environment.](https://go.microsoft.com/fwlink/?LinkId=699319)
+*   [Download](https://www.microsoft.com/net) .NET Core 1.0
+*   Clone my repository into you working directory
+*   Run **dotnet restore** in a terminal/command prompt
+*   Run **npm install**. If you don't have npm then [download](https://nodejs.org/en/download/) node.js
+*   Run **bower install**
+*   Run **gulp bower** and then **gulp prod**. Have a look at the gulpfile.js for the other gulp tasks
+*   Run **dotnet run**
 
-## Overview
+At this point you should be able to go to the **http://localhost:5000** and the website should be running.
+You can set the environment to either DEVELOPMENT or PRODUCTION. Just run **set ASPNETCORE_ENVIRONMENT=DEVELOPMENT** or **set ASPNETCORE_ENVIRONMENT=PRODUCTION**, and then run **dotnet run** again.
+You should see in the console log after **dotnet run** in which environment does the website run.
 
-*   [Conceptual overview of what is ASP.NET Core](https://go.microsoft.com/fwlink/?LinkId=518008)
-*   [Fundamentals of ASP.NET Core such as Startup and middleware.](https://go.microsoft.com/fwlink/?LinkId=699320)
-*   [Working with Data](https://go.microsoft.com/fwlink/?LinkId=398602)
-*   [Security](https://go.microsoft.com/fwlink/?LinkId=398603)
-*   [Client side development](https://go.microsoft.com/fwlink/?LinkID=699321)
-*   [Develop on different platforms](https://go.microsoft.com/fwlink/?LinkID=699322)
-*   [Read more on the documentation site](https://go.microsoft.com/fwlink/?LinkID=699323)
-
-## Run & Deploy
-
-*   [Run your app](https://go.microsoft.com/fwlink/?LinkID=517851)
-*   [Run tools such as EF migrations and more](https://go.microsoft.com/fwlink/?LinkID=517853)
-*   [Publish to Microsoft Azure Web Apps](https://go.microsoft.com/fwlink/?LinkID=398609)
-
-We would love to hear your [feedback](https://go.microsoft.com/fwlink/?LinkId=518015)
+Happy coding!
